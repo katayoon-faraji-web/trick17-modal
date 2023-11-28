@@ -1,5 +1,5 @@
 # trick17-modal
-- [Demo Project](https://katayoon-faraji-web.github.io/trick16-carousel/)
+- [Demo Project](https://katayoon-faraji-web.github.io/trick17-modal/)
 
 - Developed by katayoon faraji
 
