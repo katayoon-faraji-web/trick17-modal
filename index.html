@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="icon/bootstrap-icons.min.css">
+</head>
+<body>
+    <main class="container-fluid test-xxl">
+        <div class="row justify-content-center align-items-center col-12 mainpage position-relative px-0 mx-0">
+            <div id="mainpage2" class="position-absolute top-0 left-0"></div>
+            <div class="box row bg-white justify-content-center align-content-center position-absolute">
+                <div class=" box2 position-absolute top-0 left-0 row justify-content-center align-content-center bg-warning">
+                    <div class="col-12 my-4 position-absolute d-flex align-items-center justify-content-end px-4">
+                        <button class="bg-white btn2" onclick="func2()"><i class="bi bi-x-square-fill "></i></button>
+                    </div>
+                    <div class="col-12 text-center my-4">
+                        <h2 class="text-white h1">MODAL CONTENT</h2>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center my-4">
+                    <h2 class="text-warning h1">MODAL PROJECT</h2>
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center my-4">
+                    <button class=" p-3 rounded btn" onclick="func1()">OPEN MODAL</button>
+                </div>
+            </div>
+        </div>
+        
+        
+    </main>
+    <script>
+        function func1(){
+            document.getElementById('mainpage2').style.opacity = 1;
+            document.getElementsByClassName('box2')[0].style.zIndex = 10;
+            document.getElementsByClassName('box2')[0].style.opacity = 1;
+        }
+        function func2(){
+            document.getElementById('mainpage2').style.opacity = 0;
+            document.getElementsByClassName('box2')[0].style.zIndex = -10;
+            document.getElementsByClassName('box2')[0].style.opacity = 0;
+        }
+    </script>
+    
+</body>
+<!-- <script src="js/bootstrap.min.js"> -->
+    
+</script>
+</html>
